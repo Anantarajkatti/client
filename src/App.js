@@ -6,8 +6,9 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { HideLoading, ReloadData, ShowLoading, setPortfoliodata } from "./redux/rootslice";
 import Admin from "./pages/Admin";
-// import Login from "./pages/Admin/Login";
-
+import Login from "./pages/Admin/Login";
+ 
+  
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/admin" element={<Admin/>}/> 
-        {/* <Route path="/admin-login" element={<Login/>}/> */}
+        <Route path="/admin-login" element={<Login/>}/>
       </Routes>
     </BrowserRouter>
    

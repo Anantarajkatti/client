@@ -24,7 +24,7 @@ function AdminProjects() {
        dispatch(ShowLoading())
        let response
        if(selectedItemForEdit){
-        response=await axios.put('/api/portfolioRoute/update-project', {
+        response=await axios.put('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/update-project', {
           ...values,
           _id: selectedItemForEdit._id, 
         })

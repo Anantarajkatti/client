@@ -14,7 +14,7 @@ function Adminintro() {
     console.log(values)
      try {
         dispatch(ShowLoading())
-        const  response= await axios.put('/api/portfolioRoute/update-intro', {
+        const  response= await axios.put('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/update-intro', {
           ...values,
           _id: portfolioData.intro._id,
         }

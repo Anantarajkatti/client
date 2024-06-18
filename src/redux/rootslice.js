@@ -17,9 +17,9 @@ const rootSlice=createSlice({
          setPortfoliodata:(state,action)=>{
             state.portfolioData=action.payload;
         },
-        ReloadData:(state,action)=>{
-            state.reloadData=action.payload;
-        }
+        // ReloadData:(state,action)=>{
+        //     state.reloadData=action.payload;
+        // }
     },
 });
 

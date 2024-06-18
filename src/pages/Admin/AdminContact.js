@@ -14,7 +14,7 @@ function AdminContact() {
     console.log(values)
      try {
         dispatch(ShowLoading())
-        const  response= await axios.put('/api/portfolioRoute/update-contact', {
+        const  response= await axios.put('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/update-contact', {
           ...values,
           _id: portfolioData.contact._id,
         }

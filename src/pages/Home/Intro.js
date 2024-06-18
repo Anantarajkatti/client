@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 function Intro() {
     const {portfolioData}=useSelector((state)=>state.root);
+   
     const {intro}=portfolioData;
     const {firstName, lastName,welocmeText,description,caption}= intro;
     console.log(firstName, welocmeText)

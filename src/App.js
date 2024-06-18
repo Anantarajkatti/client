@@ -13,12 +13,13 @@ import Login from "./pages/Admin/Login";
 
 function App() {
   const {loading,portfolioData,reloadData}=useSelector((state)=>state.root);
+  
 //  const [showLoading,setSHowLoading]=useState(false)
   const  dispatch= useDispatch()
  const getPortfolioData=async()=>{
   try{
     dispatch(ShowLoading());
-    const response= await axios.get("/api/portfolioRoute/get-portfolio-data");
+    const response= await axios.get("https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/get-portfolio-data");
     dispatch(setPortfoliodata(response.data))
     dispatch(ReloadData(false))
     // console.log(response)

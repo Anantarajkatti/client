@@ -17,7 +17,7 @@ function AdminAbout() {
       const tempSkills=values.skills.split(",")
       values.skills=tempSkills;
         dispatch(ShowLoading())
-        const  response= await axios.put('/api/portfolioRoute/update-about', {
+        const  response= await axios.put('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/update-about', {
           ...values,
           _id: portfolioData.about._id,
         }

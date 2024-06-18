@@ -51,7 +51,7 @@ function Experiences() {
   const onDelete= async(item)=>{
     try {
       dispatch(ShowLoading())
-      const response=await axios.delete('/api/portfolioRoute/delete-experience',{
+      const response=await axios.delete('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/delete-experience',{
         data: { _id: item._id }
       });
       console.log(response)

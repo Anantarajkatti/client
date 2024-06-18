@@ -44,9 +44,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
+  "devDependencies": {  
     "tailwindcss": "^3.4.3",
     "webpack": "^5.91.0"
-  },
-  "proxy": "http://localhost:5000/"
+  }
+   
 }

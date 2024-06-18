@@ -1,6 +1,6 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from "./pages/Home" 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Loader from "./Components/Loader";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";

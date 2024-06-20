@@ -91,6 +91,8 @@ function Experiences() {
                 setSelectedItemForEdit(experience)
                 setShowAddEditModal(true);
                 setType("edit");
+             
+                
               
               }}>Edit</button>
               <button className='bg-red-500 text-white px-5 py-2 rounded-md' onClick={()=>{onDelete(experience)}}>Delete</button>

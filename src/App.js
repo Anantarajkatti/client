@@ -7,6 +7,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { HideLoading, ReloadData, ShowLoading, setPortfoliodata } from "./redux/rootslice";
 import Admin from "./pages/Admin";
 import Login from "./pages/Admin/Login";
+import GenericPdfDownloader from "./GenericPdfDownloader";
+
+
  
   
 
@@ -47,13 +50,14 @@ function App() {
 //  useEffect(()=>{
 //   console.log(portfolioData)
   
-//  },[portfolioData])
+//  },[portfolioData])///////////////////////////////////////////////
 
 
 
   return (
     <BrowserRouter>
     {loading?<Loader/>:null}
+    <GenericPdfDownloader rootElementId="site-content" downloadFileName="portfolio" />
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/admin" element={<Admin/>}/> 

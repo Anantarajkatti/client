@@ -10,6 +10,7 @@ import Leftsider from './Leftsider'
 import { useSelector,useDispatch } from 'react-redux'
 import axios from 'axios';
 import { setPortfoliodata } from '../../redux/rootslice'
+import GenericPdfDownloader from '../../GenericPdfDownloader'
 
 
 
@@ -33,7 +34,11 @@ import { setPortfoliodata } from '../../redux/rootslice'
     
       
       return (
-        <div>
+      
+        
+
+
+        <div id="site-content">
       
           <Header />
         
@@ -50,6 +55,8 @@ import { setPortfoliodata } from '../../redux/rootslice'
           </div>
           )}
         </div>
+
+      
       )
     }
     

@@ -19,14 +19,14 @@ function Experiences() {
        dispatch(ShowLoading())
        let response
        if(selectedItemForEdit){
-        response=await axios.put('/api/portfolioRoute/update-experience', {
+        response=await axios.put('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/update-experience', {
           ...values,
           _id: selectedItemForEdit._id, 
         })
 
        }
        else{
-         response=await axios.post('/api/portfolioRoute/add-experience', {...values});
+         response=await axios.post('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/add-experience', {...values});
                //  _id: portfolioData.intro._id,
        }  
        

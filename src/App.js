@@ -14,7 +14,7 @@ import Login from "./pages/Admin/Login";
 function App() {
   const {loading,portfolioData,reloadData}=useSelector((state)=>state.root);
   
-//  const [showLoading,setSHowLoading]=useState(false)
+
   const  dispatch= useDispatch()
  const getPortfolioData=async()=>{
   try{
@@ -41,6 +41,8 @@ function App() {
     getPortfolioData()
   }
  },[reloadData])
+
+ //////////////////////////////////////////
 
 //  useEffect(()=>{
 //   console.log(portfolioData)

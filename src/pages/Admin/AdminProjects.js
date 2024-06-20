@@ -31,7 +31,7 @@ function AdminProjects() {
 
        }
        else{
-         response=await axios.post('/api/portfolioRoute/add-project', {...values});
+         response=await axios.post('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/add-project', {...values});
                //  _id: portfolioData.intro._id,
        }  
        
@@ -57,7 +57,7 @@ function AdminProjects() {
   const onDelete= async(item)=>{
     try {
       dispatch(ShowLoading())
-      const response=await axios.delete('/api/portfolioRoute/delete-project',{
+      const response=await axios.delete('https://dynamic-portfolio-28yn.onrender.com/api/portfolioRoute/delete-project',{
         data: { _id: item._id }
       });
       console.log(response)
